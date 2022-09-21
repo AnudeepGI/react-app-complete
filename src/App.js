@@ -1,8 +1,7 @@
-import RouterIndex from "./Router";
-
+import Router from "./Router";
 
 function App() {
-  return (<RouterIndex/>);
+  return (<Router/>);
 }
 
 export default App;
