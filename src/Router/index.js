@@ -1,5 +1,4 @@
 import { BrowserRouter } from 'react-router-dom';
-
 import PrivateRoutes from './PrivateRoutes';
 import PublicRoutes from './PublicRoutes';
 
