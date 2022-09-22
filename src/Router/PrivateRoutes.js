@@ -1,7 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
-import SharedLayout from '../Layout';
+import { SharedLayout } from '../Layout';
 import ProtectedRoutes from './ProtectedRoutes';
-
 let Home = () => (<h1>Home1</h1>);
 let About = () => (<h1>About</h1>);
 
