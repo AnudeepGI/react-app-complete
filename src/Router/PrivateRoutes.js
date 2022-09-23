@@ -13,7 +13,7 @@ function PrivateRoutes() {
           </ProtectedRoutes>
         }
         >
-          <Route element={<Home />} />
+          <Route index element={<Home />} />
           <Route path="about" element={<About />} />
         </Route>
     </Routes>
