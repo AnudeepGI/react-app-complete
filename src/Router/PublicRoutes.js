@@ -8,7 +8,7 @@ function PublicRoutes() {
     return (
         <Routes>
             <Route path="/login" element={<LoginLayout />} >
-                <Route index element={<Home />} />
+                <Route index element={<LoginLayout />} />
             </Route>
         </Routes>
     )
