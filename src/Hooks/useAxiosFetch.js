@@ -9,6 +9,7 @@ export const useAxiosFetch = (axiosParams) => {
   const [loading, setLoading] = useState(true);
 
   const fetchData = async () => {
+    setLoading(true)
     try {
       const response = await axios.request(axiosParams);
       setData(response.data);
@@ -24,5 +25,5 @@ export const useAxiosFetch = (axiosParams) => {
     fetchData();
   }, []);
 
-  return { data, error, loading };
+  return { data, error, loading, fetchData };
 };
