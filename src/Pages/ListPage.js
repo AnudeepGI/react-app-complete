@@ -4,12 +4,16 @@ import { useAxiosFetch } from '../Hooks/useAxiosFetch'
 function ListPage() {
     const { data, loading, error } = useAxiosFetch({
         method: "GET",
-        url: "/toos",
+        url: "/todos",
     });
 
     if (error) {
-        console.log(error)
-        return ( <h1>Error.......</h1>);
+        return ( 
+            <>
+                <h1>Error......</h1>
+                <p>{JSON.stringify(error)}</p>
+            </>
+        );
     }
     if (loading) return (<h1>Loading.......</h1>);
 
